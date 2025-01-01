@@ -13,11 +13,10 @@ RUN wget -O /ComfyUI/models/clip/clip_l.safetensors "https://huggingface.co/comf
 RUN wget -O /ComfyUI/models/clip/t5xxl_fp8_e4m3fn.safetensors "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors?download=true" --progress=bar:force:noscroll
 
 # Download LoRas
-RUN wget -O /ComfyUI/models/loras/GracePenelopeTargaryenV5.safetensors "https://huggingface.co/WouterGlorieux/GracePenelopeTargaryenV5/resolve/main/GracePenelopeTargaryenV5.safetensors?download=true" --progress=bar:force:noscroll
-RUN wget -O /ComfyUI/models/loras/VideoAditor_flux_realism_lora.safetensors "https://huggingface.co/VideoAditor/Flux-Lora-Realism/resolve/main/flux_realism_lora.safetensors?download=true" --progress=bar:force:noscroll
+RUN wget -O /ComfyUI/models/loras/xmooning.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/fixed_xmooning-flux-2.0.safetensors?download=true" --progress=bar:force:noscroll
+RUN wget -O /ComfyUI/models/loras/manhole.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/manhole-1.0-0000318.safetensors?download=true" --progress=bar:force:noscroll
+RUN wget -O /ComfyUI/models/loras/sniffies.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/sniffies-1.0-000285.safetensors?download=true" --progress=bar:force:noscroll
+RUN wget -O /ComfyUI/models/loras/uncut.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/xpenis-uncut-flux-11-000098.safetensors?download=true" --progress=bar:force:noscroll
 
-# make the xlabs directory
-RUN mkdir -p /ComfyUI/models/xlabs/loras
-RUN wget -O /ComfyUI/models/xlabs/loras/Xlabs-AI_flux-RealismLora.safetensors "https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors?download=true" --progress=bar:force:noscroll
 
 CMD [ "/start.sh" ]
