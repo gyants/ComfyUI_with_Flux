@@ -12,6 +12,9 @@ RUN wget -O /ComfyUI/models/clip/clip_l.safetensors "https://huggingface.co/comf
 # Download and move t5xxl_fp8_e4m3fn.safetensors
 RUN wget -O /ComfyUI/models/clip/t5xxl_fp8_e4m3fn.safetensors "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors?download=true" --progress=bar:force:noscroll
 
+# Download VirileStallion
+RUN wget -O /ComfyUI/models/loras/VirileStallionV5.safetensors "https://huggingface.co/Scratchproof/Virile_Series/resolve/main/virileStallion_v50Photoreal.safetensors?download=true" --progress=bar:force:noscroll
+
 # Download LoRas
 RUN wget -O /ComfyUI/models/loras/xmooning.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/fixed_xmooning-flux-2.0.safetensors?download=true" --progress=bar:force:noscroll
 RUN wget -O /ComfyUI/models/loras/manhole.safetensors "https://huggingface.co/Zerioud/xpunc/resolve/main/manhole-1.0-0000318.safetensors?download=true" --progress=bar:force:noscroll
